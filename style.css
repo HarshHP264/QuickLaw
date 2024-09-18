@@ -1,0 +1,1048 @@
+/* Webkit browsers (Chrome, Safari) */
+::-webkit-scrollbar {
+    width: 12px;
+    /* Width of the scrollbar */
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    /* Color of the track (part the scrollbar slides on) */
+}
+
+::-webkit-scrollbar-thumb {
+    background: #555;
+    /* Color of the draggable part of the scrollbar */
+    border-radius: 6px;
+    /* Rounded corners of the scrollbar thumb */
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #333;
+    /* Color of the scrollbar thumb on hover */
+}
+
+/* For Firefox */
+* {
+    scrollbar-width: thin;
+    /* Thin scrollbar */
+    scrollbar-color: #555 #f1f1f1;
+    /* Thumb and track color */
+}
+
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #e8f5e9;
+    /* Mint green background */
+    color: #333;
+    /* Dark grey text */
+    margin: 0;
+    padding: 0;
+
+}
+
+.flex {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Navbar */
+.text-background {
+    margin-top: 0px;
+}
+
+.navbar h1 {
+    margin: 10px 0px 0px 0px;
+    font-size: xx-large;
+    padding: 10px;
+}
+
+.navbar h2 {
+    margin: 10px 0px 0px 0px;
+    font-size: x-large;
+    padding: 10px;
+}
+
+/* Style for the text background box */
+.text-background {
+    display: inline-block;
+    /* Ensure the box only takes up as much space as the text */
+    padding: 20px;
+    /* Adjust padding as needed */
+    background-color: rgba(0, 0, 0, 0.5);
+    /* Black background with 50% opacity */
+    color: white;
+    /* Text color to ensure readability */
+    border-radius: 8px;
+    /* Optional: Rounded corners */
+}
+
+header .navbar {
+    background-color: #4CAF50;
+    /* Dark green */
+    color: black;
+    padding: 20px;
+    text-align: center;
+    background-image: url(afterlogin/img/back-3.jpeg);
+    border-radius: 8px;
+    margin: 10px;
+    height: 60vh;
+}
+
+/* For home */
+.styled-button {
+    background-color: #388E3C;
+    /* Dark green */
+    color: white;
+    padding: 5px 5px;
+    ;
+    /* Increased padding for a more prominent button */
+    border: none;
+    border-radius: 8px;
+    /* Slightly rounded corners */
+    cursor: pointer;
+    font-size: 1.1em;
+    /* Slightly larger font size */
+    transition: background-color 0.3s, transform 0.2s;
+    /* Smooth transition effects */
+}
+
+.styled-button:hover {
+    background-color: #2E7D32;
+    /* Darker green on hover */
+    transform: scale(1.05);
+    /* Slightly enlarges the button on hover */
+}
+
+.styled-button:active {
+    background-color: #1B5E20;
+    /* Even darker green on click */
+    transform: scale(0.98);
+    /* Slightly shrinks the button on click */
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+header nav ul li {
+    display: inline;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2em;
+    padding: 10px;
+}
+
+h1 {
+    font-size: xx-large;
+}
+
+/* Section Grid */
+.section-grid-1 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 70px;
+}
+
+.section-grid-2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    padding: 70px;
+}
+
+.card {
+    background-color: #faf0f0;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    margin: 20px;
+
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.criminal-law a {
+    background-color: #388E3C;
+    color: white;
+    text-decoration: none;
+}
+
+.card h2 {
+    font-size: 1.3em;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.card p {
+    font-size: 1em;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+button {
+    background-color: #388E3C;
+    /* Dark green */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+button:hover {
+    background-color: #2E7D32;
+    /* Hover effect */
+}
+
+/* Section Colors */
+.criminal-law {
+    background-color: #fbe9e7;
+    /* Light coral for Criminal Law */
+}
+
+.family-law {
+    background-color: #f3e5f5;
+    /* Light lavender for Family Law */
+}
+
+.civil-law {
+    background-color: #e8f5e9;
+    /* Light mint for Civil Law */
+}
+
+/* Login Page Styles */
+.login-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+}
+
+.login-container {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+}
+
+.login-container h2 {
+    margin-bottom: 20px;
+}
+
+.login-container label {
+    display: block;
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+.login-container input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-bottom: 20px;
+}
+
+.login-container button {
+    background-color: #388E3C;
+    /* Dark green */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+.login-container button:hover {
+    background-color: #2E7D32;
+    /* Hover effect */
+}
+
+
+/* For Footer */
+/* Footer */
+footer {
+    background-color: #4CAF50;
+    /* Dark green background */
+    color: white;
+    padding: 10px 0;
+    /* Reduced padding for shorter height */
+    text-align: center;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 0 20px;
+}
+
+.footer-left,
+.footer-center,
+.footer-right {
+    flex: 1;
+    padding: 0 10px;
+    /* Reduced padding for less height */
+}
+
+.footer-left h2,
+.footer-center h2,
+.footer-right h2 {
+    font-size: 1em;
+    /* Reduced font size */
+    margin-bottom: 5px;
+    /* Reduced margin */
+}
+
+.footer-left p,
+.footer-center p {
+    font-size: 0.9em;
+    /* Slightly smaller font size */
+    color: #e8f5e9;
+    /* Light mint green */
+    margin-bottom: 5px;
+    /* Reduced bottom margin */
+}
+
+.footer-left a,
+.footer-center a,
+.footer-right a {
+    color: #e8f5e9;
+    /* Light mint green */
+    text-decoration: none;
+}
+
+.footer-left a:hover,
+.footer-center a:hover,
+.footer-right a:hover {
+    text-decoration: underline;
+}
+
+.footer-right a {
+    margin: 0 5px;
+    /* Reduced margin */
+}
+
+.footer-bottom {
+    background-color: #388E3C;
+    /* Darker green */
+    padding: 5px 0;
+    /* Reduced padding */
+    margin-top: 10px;
+    /* Reduced margin */
+}
+
+.footer-bottom p {
+    margin: 0;
+    font-size: 0.8em;
+    /* Smaller font size */
+}
+
+
+
+
+/* Form Section */
+.form-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh;
+    /* Ensures the section occupies most of the viewport height */
+    padding: 20px;
+}
+
+.form-container {
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+}
+
+.form-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.form-container label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 600;
+}
+
+.form-container input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #388E3C;
+    /* Dark green */
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1.1em;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+button:hover {
+    background-color: #2E7D32;
+    /* Darker green on hover */
+    transform: scale(1.05);
+}
+
+button:active {
+    background-color: #1B5E20;
+    /* Even darker green on click */
+    transform: scale(0.98);
+}
+
+
+
+
+/* Section List */
+.section-list {
+    padding: 50px;
+}
+
+.container {
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    margin: auto;
+}
+
+.container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.container ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.container ul li {
+    margin-bottom: 15px;
+    font-size: 1em;
+    color: #666;
+}
+
+.container ul li strong {
+    display: block;
+    font-weight: 600;
+    color: #333;
+}
+
+/* Style for sections */
+.section {
+    position: relative;
+    padding: 15px;
+    background-color: #fbe9e7;
+    /* Light coral for Criminal Law */
+    border-radius: 8px;
+    margin-bottom: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Style for buttons */
+.buttons {
+    display: none;
+    /* Hidden by default */
+    margin-top: 10px;
+}
+
+.buttons a.button {
+    display: inline-block;
+    padding: 10px 15px;
+    margin: 5px;
+    background-color: #388E3C;
+    /* Dark green */
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 0.9em;
+    transition: background-color 0.3s;
+}
+
+.buttons a.button:hover {
+    background-color: #2E7D32;
+    /* Darker green on hover */
+}
+
+/* Show buttons on hover */
+.section:hover .buttons {
+    display: block;
+}
+
+
+
+
+/* Style for quizzes section */
+.quizzes {
+    background-color: #f3e5f5;
+    /* Light lavender for quizzes */
+    margin-top: 0px;
+    height: fit-content;
+}
+
+.quiz-options {
+    margin-top: 10px;
+}
+
+.quiz-options a.button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #388E3C;
+    /* Dark green */
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1em;
+    transition: background-color 0.3s;
+}
+
+.quiz-options a.button:hover {
+    background-color: #2E7D32;
+    /* Darker green on hover */
+}
+
+
+/* 
+for 2nd page */
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    /* Responsive grid */
+    gap: 20px;
+    /* Space between grid items */
+}
+
+.grid-item {
+    background-color: #f4f4f4;
+    border: 2px solid #ddd;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    text-align: center;
+}
+
+.grid-item:hover {
+    transform: scale(1.05);
+    /* Slight zoom effect on hover */
+}
+
+.grid-item a {
+    text-decoration: none;
+    font-weight: 600;
+    color: #333;
+}
+
+.grid-item p {
+    margin-top: 10px;
+    color: #666;
+}
+
+/* Hide the button initially */
+.details-button {
+    display: none;
+    /* Hide the button by default */
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #4CAF50;
+    /* Dark green background */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Show the button on hover */
+.grid-item:hover .details-button {
+    display: inline-block;
+    /* Show the button when hovering over the grid-item */
+}
+
+
+/* Header and footer content styling */
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    background-color: #388e3c;
+    color: white;
+    height: 30px;
+}
+
+/* Left and right sections styling for header and footer */
+.header-left,
+.header-right {
+    display: flex;
+    gap: 15px;
+}
+
+.header-center {
+    text-align: center;
+}
+
+/* Styled button with green theme */
+.styled-button {
+    background-color: #4caf50;
+    /* Light green button */
+    color: white;
+    padding: 5px 10px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+}
+
+.styled-button:hover {
+    transform: scale(1.05);
+    /* Slight zoom effect on hover */
+}
+
+
+/* Section container for search */
+.searchBar {
+    padding: 20px;
+    margin: 0 auto;
+    max-width: 600px;
+    text-align: center;
+}
+
+.searchBar ul li a {
+    color: black;
+}
+
+/* Search bar input styling */
+#searchBar {
+    width: 100%;
+    padding: 12px 20px;
+    font-size: 16px;
+    border: 2px solid #388e3c;
+    /* Dark green border */
+    border-radius: 5px;
+    outline: none;
+    transition: border-color 0.3s ease;
+    background-color: #f9f9f9;
+    /* Light background */
+}
+
+/* Change border color on focus */
+#searchBar:focus {
+    border-color: #4caf50;
+    /* Light green on focus */
+}
+
+/* Search results list */
+#searchResults {
+    list-style-type: none;
+    margin-top: 20px;
+    padding: 0;
+}
+
+/* Search result items */
+#searchResults li {
+    background-color: #4caf50;
+    /* Light green */
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+    margin: 8px 0;
+    border-radius: 5px;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    cursor: pointer;
+}
+
+/* Hover effect for search results */
+#searchResults li:hover {
+    background-color: #388e3c;
+    /* Dark green on hover */
+    transform: scale(1.05);
+    /* Zoom in effect */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    #searchBar {
+        font-size: 14px;
+    }
+}
+
+
+.quiz-options {
+    display: none;
+    /* Hide buttons initially */
+    flex-direction: column;
+    /* Stack buttons vertically */
+    gap: 10px;
+    /* Space between buttons */
+}
+
+.card.quizzes:hover .quiz-options {
+    display: flex;
+    /* Show buttons on hover */
+}
+
+.button,
+.watch-video-btn {
+    padding: 10px 20px;
+    /* Button size */
+    background-color: #4CAF50;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 15px;
+    text-align: center;
+    /* Center text inside button */
+    cursor: pointer;
+    /* Change cursor to pointer */
+    display: inline-block;
+    /* Ensure buttons are block elements */
+}
+
+.button,
+.watch-video:hover {
+    background-color: #45a049;
+}
+
+
+.flashcard-container {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    width: 80%;
+    max-width: 600px;
+    height: 400px;
+    overflow: hidden;
+
+}
+
+.flashcard-slider {
+    display: flex;
+    overflow: hidden;
+    height: calc(100% - 60px);
+    /* Adjust height to account for buttons */
+    width: 100%;
+    transition: transform 0.3s ease-in-out;
+}
+
+.flashcard {
+    min-width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flashcard-content {
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.flashcard-controls {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    width: calc(100% - 40px);
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+
+.flashcard-controls .control-btn {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    user-select: none;
+}
+
+.flashcard-controls .control-btn:hover {
+    background-color: #0056b3;
+}
+
+.close-btn {
+    background-color: transparent;
+    /* Remove background color */
+    border: none;
+    /* Remove any default border */
+    box-shadow: none;
+    /* Remove any shadow if previously applied */
+    cursor: pointer;
+    /* Pointer cursor on hover */
+    user-select: none;
+    /* Prevent text selection */
+    display: flex;
+    /* Center the icon */
+    align-items: center;
+    /* Align vertically */
+    justify-content: center;
+    /* Center horizontally */
+}
+
+.flashcard-controls #prev-btn {
+    align-self: flex-end;
+}
+
+.flashcard-controls #next-btn {
+    align-self: flex-end;
+}
+
+
+.flashcard-controls #close-btn {
+    position: absolute;
+    /* background-color: #f44336; Red background */
+    color: white;
+    /* White text color */
+    width: 40px;
+    /* Set width */
+    height: 40px;
+    /* Set height */
+    border-radius: 50%;
+    /* Make it circular */
+    display: flex;
+    /* Center the text */
+    align-items: center;
+    /* Align vertically */
+    justify-content: center;
+    /* Center horizontally */
+    right: 10px;
+    /* Adjust right positioning */
+    bottom: 370px;
+    /* Adjust bottom positioning */
+    text-align: center;
+    cursor: pointer;
+    /* Pointer cursor on hover */
+    user-select: none;
+    /* Prevent text selection */
+    font-size: 20px;
+    /* Adjust font size */
+    font-weight: bold;
+    /* Make the "X" bold */
+    border: none;
+    /* Remove border */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    /* Optional: Add shadow */
+}
+
+/* Optional: Add hover effect */
+.flashcard-controls #close-btn:hover {
+    background-color: #d32f2f;
+    /* Darker red on hover */
+}
+
+.close-btn {
+    background-color: red;
+    top: -370px;
+    position: absolute;
+    right: -15px;
+    width: 0px;
+    height: 20px;
+    border-radius: 50% !important;
+}
+
+.flashcard-controls #close-btn:hover {
+    background-color: #e53935;
+}
+
+.flashcard-content {
+    font-size: 14px;
+    /* Adjust this value to make the font smaller or larger */
+    line-height: 1.5;
+    /* Adjust the line height for better readability */
+}
+
+/* Align headings (Flashcard titles) to center */
+.flashcard-content h3 {
+    font-size: 16px;
+    /* Adjust title size */
+    text-align: center;
+    /* Center the headings */
+    margin-bottom: 10px;
+    /* Add some space below the heading */
+}
+
+/* Align content (paragraphs, lists, etc.) to the left */
+.flashcard-content p,
+.flashcard-content ul,
+.flashcard-content li {
+    font-size: 14px;
+    /* Adjust content size */
+    text-align: left;
+    /* Align content to the left */
+    margin-left: 15px;
+    /* Optional: Add some left margin for better spacing */
+    line-height: 1.5;
+    /* Optional: Improve readability with line height */
+}
+
+/* Ensure list items have proper indentation */
+.flashcard-content ul {
+    list-style-position: inside;
+    /* Keep bullet points inside the content area */
+}
+
+.flashcard-content {
+    max-height: 360px;
+    /* Set the maximum height for the flashcard content */
+    overflow-y: scroll;
+    /* Add vertical scrolling if content overflows */
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+/* Video modal styling */
+.video-modal {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.video-modal-content {
+    position: relative;
+    width: 80%;
+    max-width: 700px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.cross-btn {
+    position: absolute;
+    top: -20px;
+    right: 0px;
+    font-size: 41px;
+    color: #ff0000;
+    cursor: pointer;
+}
+
+/* Ensure iframe is responsive */
+.video-modal-content iframe {
+    width: 100%;
+    height: 400px;
+}
+
+
+
+/* Styles for the tricks image */
+.tricks-image img {
+    max-width: 100%;
+    cursor: pointer;
+    border-radius: 5px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+
+
+
+.top-close {
+    top: -415px;
+}
+
+
+/* Container for the hidden button */
+.trick-buttons-container {
+    position: relative; /* Ensure that the button's position is relative to this container */
+    width: 100%; /* Adjust as needed */
+    height: 100%; /* Adjust as needed */
+}
+
+/* Hidden button styles */
+.trick-buttons {
+    /* position: absolute; */
+    bottom: 10px; /* Adjust as needed */
+    right: 10px; /* Adjust as needed */
+    opacity: 0;
+    visibility:hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+/* Show the button on hover of the container */
+.quizzes:hover .trick-buttons {
+    opacity: 1;
+    visibility: visible;
+}
+
+/* Button Styles */
+.trick-buttons button {
+    padding: 10px 20px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.trick-buttons button:hover {
+    background-color: #388e3c;
+    transform: scale(1.05);
+}

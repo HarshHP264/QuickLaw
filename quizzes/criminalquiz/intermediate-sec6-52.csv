@@ -1,0 +1,6 @@
+Que, opt1, opt2, opt3, opt4, answ
+What will be the output of the following code: int a = 10; System.out.println(a++);?,10,11,Compile Error,Undefined Behavior,10
+Which of the following statements is true about constructors in Java?,A class can have only one constructor,A constructor can return a value,Constructors can be overloaded,Constructors must be declared as public,Constructors can be overloaded
+What is the purpose of the this keyword in Java?,To refer to the current object instance,To create a new object,To return from a method,To end the program,To refer to the current object instance
+Which of the following loops is guaranteed to execute at least once in Java?,for loop,while loop,do-while loop,foreach loop,do-while loop
+What will be the result of the following code: String str = null; if (str.equals("Hello")) { System.out.println("Equal"); }?,Equal,Not Equal,NullPointerException,Compile Error,NullPointerException

@@ -1,0 +1,6 @@
+Que, opt1, opt2, opt3, opt4, answ
+What is the output of the following code: System.out.println(5 + 3 + "Hello" + 2 + 4);?,8Hello24,Hello24,53Hello24,Compile Error,8Hello24
+Which of the following is a correct way to create a thread in Java?,Implement the Runnable interface,Extend the Thread class,Both A and B,None of the above,Both A and B
+What is the purpose of the finally block in Java?,To execute code regardless of an exception,To handle exceptions,To define a method,To declare a variable,To execute code regardless of an exception
+What does the final keyword mean when applied to a method in Java?,The method can be overridden,The method cannot be inherited,The method cannot be overridden,The method cannot be accessed,The method cannot be overridden
+Which of the following is a valid way to create an immutable class in Java?,Make the class final,Make all fields private and final,Provide only getters for all fields,All of the above,All of the above
